@@ -10,6 +10,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+//        this line is for the process of adding the dependency
+        maven (url ="https://jitpack.io")
     }
 }
 
