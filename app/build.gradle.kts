@@ -33,6 +33,11 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    //this one to avoid having an error when building the app may be we donot need it
+    //but just keep it here for now //this is help to avoid the app to stop
+    buildFeatures{
+        dataBinding=true
+    }
 }
 
 dependencies {
