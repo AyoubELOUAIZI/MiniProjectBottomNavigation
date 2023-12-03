@@ -50,4 +50,10 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+//    also these dependencys to avoid some errors
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+    implementation ("androidx.activity:activity-ktx:1.8.1")
+//    implementation ("androidx.fragment:fragment-ktx:1.6.2")
+
+    implementation("androidx.core:core-splashscreen:1.0.1")  //this google dependency is for the splach screen
 }

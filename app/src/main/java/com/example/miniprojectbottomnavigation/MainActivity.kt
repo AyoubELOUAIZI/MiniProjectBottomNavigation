@@ -2,19 +2,25 @@ package com.example.miniprojectbottomnavigation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.fragment.app.Fragment
 import com.example.miniprojectbottomnavigation.fragment.ContactFragment
 import com.example.miniprojectbottomnavigation.fragment.GalleryFragment
 import com.example.miniprojectbottomnavigation.fragment.HomeFragment
 import com.example.miniprojectbottomnavigation.fragment.SettingFragment
 import com.qamar.curvedbottomnaviagtion.CurvedBottomNavigation
+import androidx.activity.viewModels
 
 class MainActivity : AppCompatActivity() {
+    private val viewModel by viewModels<MainViewModel>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        installSplashScreen().apply {
+            setKeepOnScreenCondition {
+                !viewModel.isReady.value
+            }
+        }
         setContentView(R.layout.activity_main)
-
-
 
         val bottomNavigation = findViewById<CurvedBottomNavigation>(R.id.bottomNavigation)
         bottomNavigation.add( CurvedBottomNavigation.Model(1,"Home",R.drawable.ic_home_24))
