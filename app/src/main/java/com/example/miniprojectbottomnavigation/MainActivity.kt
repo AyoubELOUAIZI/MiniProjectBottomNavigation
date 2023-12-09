@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     private val viewModel by viewModels<MainViewModel>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //this code is  for the splashscreen
         installSplashScreen().apply {
             setKeepOnScreenCondition {
                 !viewModel.isReady.value
@@ -51,12 +52,16 @@ class MainActivity : AppCompatActivity() {
             }
         }
         setContentView(R.layout.activity_main)
+        // Set the title for the activity
+        //supportActionBar?.title = "Your Activity Name"
 
         val bottomNavigation = findViewById<CurvedBottomNavigation>(R.id.bottomNavigation)
         bottomNavigation.add( CurvedBottomNavigation.Model(1,"Home",R.drawable.ic_home_24))
-        bottomNavigation.add( CurvedBottomNavigation.Model(2,"Setting",R.drawable.ic_settings_24))
+        bottomNavigation.add( CurvedBottomNavigation.Model(2,"Gallery",R.drawable.ic_gallery))
         bottomNavigation.add( CurvedBottomNavigation.Model(3,"Home",R.drawable.ic_home_24))
         bottomNavigation.add( CurvedBottomNavigation.Model(4,"Setting",R.drawable.ic_settings_24))
+        bottomNavigation.add( CurvedBottomNavigation.Model(5,"Setting",R.drawable.ic_gallery))
+
 
         bottomNavigation.setOnClickMenuListener {
             when(it.id){
@@ -64,13 +69,16 @@ class MainActivity : AppCompatActivity() {
                     replaceFragment(HomeFragment())
                 }
                 2->{
-                    replaceFragment(SettingFragment())
+                    replaceFragment(GalleryFragment())
                 }
                 3->{
                     replaceFragment(GalleryFragment())
                 }
                 4->{
                     replaceFragment(ContactFragment())
+                }
+                5->{
+                    replaceFragment(GalleryFragment())
                 }
             }
             true
