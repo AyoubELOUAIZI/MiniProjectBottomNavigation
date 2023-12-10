@@ -10,10 +10,10 @@ import androidx.fragment.app.Fragment
 import com.example.miniprojectbottomnavigation.fragment.ContactFragment
 import com.example.miniprojectbottomnavigation.fragment.GalleryFragment
 import com.example.miniprojectbottomnavigation.fragment.HomeFragment
-import com.example.miniprojectbottomnavigation.fragment.SettingFragment
 import com.qamar.curvedbottomnaviagtion.CurvedBottomNavigation
 import androidx.activity.viewModels
 import androidx.core.animation.doOnEnd
+import com.example.miniprojectbottomnavigation.fragment.SchoolFragment
 
 class MainActivity : AppCompatActivity() {
     private val viewModel by viewModels<MainViewModel>()
@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
                     replaceFragment(HomeFragment())
                 }
                 2->{
-                    replaceFragment(GalleryFragment())
+                    replaceFragment(SchoolFragment())
                 }
                 3->{
                     replaceFragment(GalleryFragment())
