@@ -59,8 +59,8 @@ class MainActivity : AppCompatActivity() {
         bottomNavigation.add( CurvedBottomNavigation.Model(1,"Home",R.drawable.ic_home_24))
         bottomNavigation.add( CurvedBottomNavigation.Model(2,"Gallery",R.drawable.ic_gallery))
         bottomNavigation.add( CurvedBottomNavigation.Model(3,"Home",R.drawable.ic_home_24))
-        bottomNavigation.add( CurvedBottomNavigation.Model(4,"Setting",R.drawable.ic_settings_24))
-        bottomNavigation.add( CurvedBottomNavigation.Model(5,"Setting",R.drawable.ic_gallery))
+        bottomNavigation.add( CurvedBottomNavigation.Model(4,"Contact",R.drawable.ic_contact_support24))
+        bottomNavigation.add( CurvedBottomNavigation.Model(5,"Setting",R.drawable.ic_settings_24))
 
 
         bottomNavigation.setOnClickMenuListener {

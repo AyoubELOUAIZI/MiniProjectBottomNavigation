@@ -3,17 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFEB38"
+    android:background="@drawable/background_home"
     tools:context=".fragment.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Home Fragment"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        android:layout_gravity="center" />
 
 </FrameLayout>
