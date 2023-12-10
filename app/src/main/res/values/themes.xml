@@ -1,16 +1,6 @@
-<!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<resources>-->
-
-<!--    <style name="Theme.MiniProjectBottomNavigation" parent="android:Theme.Material.Light.NoActionBar" />-->
-
-<!--    <style name="Theme.App.Starting" parent="Theme.SplashScreen">-->
-<!--        <item name="windowSplashScreenBackground">@color/white</item>-->
-<!--        <item name="postSplashScreenTheme">@style/Theme.MiniProjectBottomNavigation</item>-->
-<!--    </style>-->
-<!--</resources>-->
-
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+<!--    to show the title action add : Theme.AppCompat.Light.DarkActionBar instead of noAction-->
     <style name="Base.Theme.MiniProjectBottomNavigation" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
