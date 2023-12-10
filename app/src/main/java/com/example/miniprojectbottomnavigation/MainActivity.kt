@@ -57,8 +57,8 @@ class MainActivity : AppCompatActivity() {
 
         val bottomNavigation = findViewById<CurvedBottomNavigation>(R.id.bottomNavigation)
         bottomNavigation.add( CurvedBottomNavigation.Model(1,"Home",R.drawable.ic_home_24))
-        bottomNavigation.add( CurvedBottomNavigation.Model(2,"Gallery",R.drawable.ic_gallery))
-        bottomNavigation.add( CurvedBottomNavigation.Model(3,"Home",R.drawable.ic_home_24))
+        bottomNavigation.add( CurvedBottomNavigation.Model(2,"School",R.drawable.ic_school_24))
+        bottomNavigation.add( CurvedBottomNavigation.Model(3,"Gallery",R.drawable.ic_gallery))
         bottomNavigation.add( CurvedBottomNavigation.Model(4,"Contact",R.drawable.ic_contact_support24))
         bottomNavigation.add( CurvedBottomNavigation.Model(5,"Setting",R.drawable.ic_settings_24))
 
